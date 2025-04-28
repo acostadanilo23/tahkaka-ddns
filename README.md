@@ -1,0 +1,2 @@
+# tahkaka-ddns
+DNS dinamico
