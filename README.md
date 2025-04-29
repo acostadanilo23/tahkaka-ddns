@@ -29,6 +29,7 @@ cd tahkaka-ddns-service
 ```
 
 Instale as dependências:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -42,13 +43,14 @@ CF_API_TOKEN='seu_token_cloudflare'
 CF_ZONE_ID='sua_zone_id'
 DDNS_RECORD_NAME='seu_dominio.exemplo.com'
 DDNS_RECORD_TYPE='A' # ou 'AAAA' para IPv6
-``` 
+```
 
 > Atenção: As variáveis CF_API_TOKEN, CF_ZONE_ID e DDNS_RECORD_NAME são obrigatórias!
 
 ## 🚀 Uso
 
 Execute o script manualmente:
+
 ```bash
 python tahkaka_ddns_service.py
 ```
@@ -60,6 +62,7 @@ Se quiser, agende a execução automática:
     Windows: via Agendador de Tarefas
 
 Exemplo de agendamento no crontab para rodar a cada 5 minutos:
+
 ```text
 */5 * * * * /usr/bin/python3 /caminho/para/tahkaka_ddns_service.py
 ```
